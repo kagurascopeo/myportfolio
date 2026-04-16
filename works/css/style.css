@@ -1,0 +1,646 @@
+@charset "utf-8";
+@import url('https://use.fontawesome.com/releases/v7.1.0/css/all.css');
+
+html {
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif, Yomogi, 'Font Awesome 5 Free';
+    font-weight: 100;
+    content: "\f007";
+}
+
+.yomogi-regular {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+li {
+    font-family: "Yomogi", cursive;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* カーソル */
+body {
+    cursor: url("../images/cursor.png") 10 10, auto;
+}
+
+/* ボタンやリンクホバーでカーソル変更 */
+button:hover {
+    cursor: url("../images/cursor2.png"), auto;
+}
+
+a {
+    cursor: url("../images/cursor2.png"), auto;
+}
+
+
+/* 下からフェードイン＋少し拡大して強調 */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+body h2 {
+    font-size: clamp(24px, 3.2vw, 52px);
+    font-family: Yomogi;
+    color: #0063b4;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+body h3 {
+    font-size: 2rem;
+    font-family: Yomogi;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    animation: popIn 0.6s ease-out forwards;
+}
+
+/* 流れ星っぽく */
+body h3::after {
+    content: "";
+    position: absolute;
+    left: -30%;
+    bottom: -5px;
+    /* 文字の下に配置 */
+    width: 30%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #FFF700, transparent);
+    animation: shine 1.8s linear infinite;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 流れ星っぽく */
+@keyframes shine {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+body h4 {
+    font-size: 1.5rem;
+    font-family: Yomogi;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+body h4::after {
+    content: "";
+    position: absolute;
+    left: -30%;
+    bottom: -5px;
+    /* 文字の下に配置 */
+    width: 30%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #FFF700, transparent);
+    animation: shine 1.8s linear infinite;
+}
+
+/* 流れ星っぽく */
+@keyframes shine {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+.header {
+    margin: 0;
+    background-color: #0063b4;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+.header-inner {
+    position: relative;
+    width: 100%;
+
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .mySwiper {
+        width: 100%;
+        height: 400px;
+        margin: 0 0 40px 0;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: small;
+        color: #fff;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        gap: 30px;
+        list-style-type: none;
+    }
+
+    .sp-btn {
+        display: none;
+    }
+}
+
+body {
+    padding-top: 40px;
+    background-image: url(../images/blue-background-water.jpg);
+    background-size: cover;
+    opacity: 0.9;
+}
+
+/* スライドショーより前に表示 */
+.profile-figure {
+    position: relative;
+    aspect-ratio: 7 / 5;
+    position: relative;
+    z-index: 200000;
+    overflow: hidden;
+}
+
+.profile-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure.image img {
+    display: block;
+    position: relative;
+    z-index: 9999;
+    width: 400px;
+}
+
+.caption-center {
+    text-align: center;
+}
+
+.image {
+    margin: -30px 30px 30px 200px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+
+figure img {
+    display: block;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caption-center {
+    text-align: center;
+    width: fit-content;
+}
+
+/* 横並び */
+.flex {
+    display: flex;
+    align-items: flex-start;
+    /* 上揃え */
+    /* gap: 30px; */
+    /* 画像と文章の間の余白 */
+}
+
+.flex .image img {
+    display: block;
+}
+
+.flex .right {
+    max-width: 600px;
+}
+
+
+.flex .image {
+    width: 400px;
+    /*画像サイズ指定*/
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex .right {
+    margin: 0;
+    padding: 0;
+}
+
+.flex .title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.flex .text {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex
+}
+
+div.flex figure {
+    margin: 20px 20px 0 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fa-youtube {
+    padding-top: 30px;
+    color: #fe0000;
+}
+
+button {
+    margin: 50px auto 50px auto;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    filter: drop-shadow();
+    border-radius: 2em;
+}
+
+body {
+    padding: 20px;
+}
+
+.bounce-btn {
+    animation: bounce 1s infinite;
+    background: #ff8c00(45, 178, 255);
+    padding: 20px 80px;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button_slide-up {
+    font-size: 25px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #50c8f0;
+    transform: rotate(45deg) skew(10deg, 10deg);
+    border: none;
+    cursor: pointer;
+}
+
+.button_slide-up:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+/* スライドショー */
+
+.mySwiper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.swiper-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.swiper-wrapper {
+    min-width: 100%;
+    margin: -40px 0 20px -50px;
+    display: grid;
+    position: relative;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+:root {
+    --swiper-theme-color: #ff6b6b;
+    --swiper-navigation-size: 30px;
+}
+
+footer {
+    figure {
+        width: 140px;
+        /* 画像と同じ幅に揃える */
+        margin: 0 auto;
+        /* 中央寄せ（必要なら） */
+        text-align: center;
+        /* キャプションを中央揃え */
+    }
+
+    figure img {
+        width: 100%;
+        /* figure の幅に合わせて画像をフィット */
+        height: auto;
+        /* アスペクト比を維持 */
+    }
+
+    .caption-center {
+        font-size: 0.9rem;
+        margin-top: 6px;
+    }
+
+    .image-container {
+        transform: translateX(45px);
+        display: flex;
+        flex-direction: column;
+        /* 横並びにする */
+        justify-content: center;
+        /* 全体を中央寄せ */
+        align-items: flex-start;
+        /* 高さが違う要素でも上揃えで整う */
+        gap: 100px;
+
+        /* 要素間の余白 */
+        margin: 100px auto;
+
+        @media (max-width: 767px) {
+            gap: 2em;
+            /* スマホでは余白を減らす */
+        }
+    }
+
+    .image-container figure {
+        width: 140px;
+        /* 画像とキャプションの幅を統一 */
+        text-align: center;
+        /* キャプション中央寄せ */
+        margin: 0;
+    }
+
+    .image-container figure img {
+        width: 100%;
+        /* figure の幅に合わせる */
+        height: auto;
+    }
+
+    .image-container i {
+        display: block;
+        /* アイコンもブロック化して中央揃え */
+        text-align: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-image: url(..//images/mobailbg.png);
+    background-size: cover;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+
+/* スマホ対応 */
+@media (max-width: 767px) {
+    .header {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .logo {
+            text-align: center;
+            transform: none;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: auto;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    body {
+        font-size: 14px;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .image {
+            margin: 30px auto;
+            align-items: center;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    .container {
+        width: 100%;
+        /* コンテナの幅を100%にする */
+        padding: 0 20px;
+        /* 左右のpaddingを調整 */
+    }
+
+
+
+    nav ul li {
+        display: none;
+    }
+
+    .hamburger-menu {
+        width: 30px;
+        height: 20px;
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+        border-radius: 2px;
+    }
+
+    .menu-links {
+        display: none;
+        position: fixed;
+        top: 40px;
+        right: 10px;
+        background: #0063b4;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .menu-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-links.active {
+        display: block;
+    }
+
+    .menu-links a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-links li {
+        margin: 0;
+    }
+
+    main {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

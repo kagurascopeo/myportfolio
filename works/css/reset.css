@@ -1,0 +1,145 @@
+/* width, heightの範囲をborderまでにする */
+* {
+	box-sizing: border-box;
+}
+
+/* 要素のデフォルトのスタイルをリセットする */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* リストのマーカーを消す */
+ol,
+ul {
+	list-style: none;
+}
+
+/* a要素のデフォルトのスタイルをリセットする */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ページ全体の基本的な文字情報を設定 必要に応じて変更して良い*/
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	color: #4d4d4d;
+	letter-spacing: .05em;
+	line-height: 1;
+}
+
+/* ボタンの線を消してクリックできるようなカーソルにする */
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+/* 見出しの文字太さ、文字の大きさをリセット */
+/* h1, */
+/* h2, */
+h3,
+h4 {
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+/* 画像が親要素をはみださないようにしている */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+/* テーブルの線を一本の線にする */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
