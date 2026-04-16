@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="icon" href="icons/favicon.ico">
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+
+    <title>申込みフォーム</title>
+
+<body>
+
+    <form>
+        <label for="preferredDateTime">希望する日時（カレンダーの空きから選ぶ）:</label>
+        <select id="preferredDateTime" name="preferredDateTime" required>
+            <option value="datetime1">2030/4/7</option>
+            <option value="datetime2">2030/4/8</option>
+            <option value="datetime3">2030/4/9</option>
+        </select>
+
+        <label for="category">カテゴリー:</label>
+        <select id="category" name="category" required>
+            <option value="menu1">体験ダイビング</option>
+            <option value="menu2">ジュニアコース</option>
+            <option value="menu3">親子コース</option>
+            <option value="menu4">スキルアップコース</option>
+            <option value="menu5">ファンダイビング</option>
+        </select>
+
+        <label for="occupation">住所（eラーニングの教材の郵送先）:</label>
+        <input type="text" id="address" name="address" placeholder="住所を入力してください">
+
+        <label for="nameKana">名前:</label>
+        <input type="text" id="nameKana" name="nameKana" required placeholder="代表者の名前を入力してください">
+
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" required placeholder="メールアドレスを入力してください">
+
+        <label for="phone">電話番号:</label>
+        <input type="tel" id="phone" name="phone" placeholder="電話番号を入力してください">
+
+        <label for="comments">コメント:</label>
+        <textarea id="comments" name="comments" rows="4" required placeholder="質問や心配事があればメールで返信いたします"></textarea>
+        <button type="submit">送信</button>
+    </form>
+    <a href="index.html">
+        <div class="logo"><img src="images/logo.png" alt="DIVER’S SHOP COCOLO" width="90" height="100"> <br>
+            <p>トップページに戻る</p>
+        </div>
+    </a>
+
+</body>
+
+
+</html>

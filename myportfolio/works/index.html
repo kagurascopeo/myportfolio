@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="DIVER’S SHOP COCOLOは、体験ダイビング、国際ライセンス取得コース、ファンダイビングを提供するダイビングショップです。初心者から経験者まで、幅広いニーズに対応しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCOLO</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo"><img src="images/logo.png" alt="DIVER’S SHOP COCOLO" width="120" height="120"></div>
+            <nav>
+                <ul>
+                    <a href="#taikenn">
+                        <li>体験ダイビング</li>
+                    </a>
+                    <a href="#licenses">
+                        <li>ライセンス取得講座</li>
+                    </a>
+                    <a href="#fans">
+                        <li>ファンダイビング</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <!-- スマホ用ハンバーガー（PCは非表示） -->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#taikenn" onclick="toggleMenu()">体験ダイビング</a></li>
+                    <li><a href="#licenses" onclick="toggleMenu()">ライセンス取得講座</a></li>
+                    <li><a href="#fans" onclick="toggleMenu()">ファンダイビング</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    </header>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/top1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/top2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/top3.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+
+    <section class="flex" insutructor>
+        <figure class="image"><img src="images/tensyu.jpg" alt="大人気インストラクター" width="350" height="400">
+            <figcaption class="caption-center">
+                <h3>
+                    代表インストラクター<br>
+                    <strong> 蘆田 心</strong><br>
+                    <p>(あしだ こころ)</p>
+                </h3>
+            </figcaption>
+        </figure>
+
+        <div class="right">
+            <h2>優しくまっすぐな人柄で大人気のインストラクター</h2>
+            <p class="text"> 海なし県と呼ばれる奈良で育ち、11歳で「JR.OPEN WATER DIVER」
+                14歳で「JR.ADVANCED OPEN WATER DIVER」ライセンスを取得した。 翌年には念願だった人命の救助に特化した「PADI RESCUE
+                DIVER」を取得した。ダイバーにしかできない海の保全活動に力を入れている。
+                自身の経験を活かし、子供たちに海と命の大切さを伝えている。<br>陸ではサッカーのゴールキーパー、「海もゴールも、この手で守る！」が彼のポリシー。 <br>フィールドの守備範囲は、海まで及ぶ。<br>
+            <h4>ゴールと海を守り抜く、蒼きダイバー!!</h4>
+            <br><a href="https://youtu.be/C5vXkhESh_M?si=8tjNRtgYfR9H8O6k" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube" style="font-size:70px; color:red;"></i>
+            </a>
+
+            </p>
+        </div>
+    </section>
+    <a href="contact.html"><button class="bounce-btn"> <i class="fa-solid fa-calendar-days"></i> 空きを確認</button></a>
+
+
+
+    <main>
+
+        <section>
+            <div class="flex">
+                <figure><img src="images/taikenn.jpg" alt="体験ダイビングの写真" width=500 height="300"></figure>
+                <div>
+                    <h2 id="taikenn">体験ダイビング</h2>
+                    <p>初めての方でも安心の全て一組で貸し切りのプライベートスタイル
+                        です。泳ぎに自信のない方、不安な方もお気軽にご参加ください。
+                        初心者の方やダイビングライセンスに興味がある方におススメです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex">
+                <div>
+                    <h2 id="licenses">国際ライセンス取得コース</h2>
+                    <p>世界共通のダイビング教育機関の「PADI®認定カード」を発行します。水面下の世界を探検するためのパスポートであり、PADI トレーニングを修了した証でもあります。</p>
+                    <h3>★ジュニアコース</h3>
+                    <p>10歳～15歳未満は「ジュニア・ダイバー」認定となります。事前にご自宅で学科のeラーニングを終了後は現地2日で取得可能。 </p>
+                    <h3>★親子コース</h3>
+                    <p>
+                        親子でバディを組みコミュニケーションを取りながら潜れば、
+                        信頼関係がより一層深まります。
+                    </p>
+                </div>
+                <figure><img src="images/junior.jpg" alt="juniorコースの写真" width="500" height="300"></figure>
+            </div>
+            <div class="flex">
+                <figure><img src="images/fres.jpg" alt="ファーストレスポンスの写真" width="500" height="300"></figure>
+                <div>
+                    <h3>★スキルアップコース</h3>
+                    <p>
+                        世界の海があなたを待っています。
+                        <br>ダイビングを楽しむために新たなダイビングスタイルを経験できるステップ
+                        アップライセンスコースを選択してください。
+                    </p>
+                    <h3>★エマージェンシー・ファースト・レスポンス <br>(心肺蘇生法+応急手当)</h3>
+                    <p>
+                        心停止などい生命に関わる緊急時のケア(一次ケア)と、ケガや病気のケア
+                        (2次ケア)について学びます。最新の医学的基盤に基づいた信頼誠の高いプログラムで、様々な機関から認証されています。心停止した人の命を救う可能性が大幅に高まります。周囲の人が早期に救命処置を行うことで、救急隊到着までの生存率は約2倍、AED併用で約4倍に向上し、脳へのダメージを軽減して後遺症を減らす効果も期待できます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex">
+                <div>
+                    <h2 id="fans">ファンダイビング</h2>
+                    <p>ライセンス取得後はお祝いダイビングをプレゼント。
+                        <br>ファンダイビングのリピーター様はダイビングの全てのコース費が10%OFF!!
+                    </p>
+                </div>
+                <figure><img src="images/fan.jpg" alt="ファンダイビングの写真" width="500" height="300"></figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- オレンジボタン -->
+    <a href="contact.html"><button class="bounce-btn"> <i class="fa-solid fa-calendar-days"></i> 空きを確認</button></a>
+
+    <!-- topへ戻るボタン -->
+    <a href="#top" class="btn-wrap">
+        <button class="button_slide-up">↑ <br>TOP</button>
+    </a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('body').ripples({
+                resolution: 512,
+                dropRadius: 20,
+                perturbance: 0.04
+            });
+        });
+    </script>
+    function toggleMenu() {
+    const menu = document.getElementById('menuLinks');
+    menu.classList.toggle('active');
+    }
+
+
+    <footer>
+        <div class="image-container">
+            <a href="https://www.padi.com/" target="_blank" rel="noopener noreferrer">
+                <figure><img src="images/padi.png" alt="PADIロゴ" width="140" height="230">
+                    <figcaption>PADI公式ホームページ</figcaption>
+                </figure>
+            </a>
+            <figure><img src="images/cpr.png" alt="ファーストレスポンスロゴ" width="100" height="100">
+                <figcaption class="caption-center">国際ガイドラインに基づき潜水事故を防ぐ「正しい知識」と「安全対策」</figcaption>
+            </figure>
+            <a href="https://youtu.be/C5vXkhESh_M?si=8tjNRtgYfR9H8O6k" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube" style="font-size:100px; color:red;"></i>
+            </a>
+
+        </div>
+        &copy;DIVER’S SHOP COCOLO All rights reserved.
+    </footer>
+</body>
+
+</html>
